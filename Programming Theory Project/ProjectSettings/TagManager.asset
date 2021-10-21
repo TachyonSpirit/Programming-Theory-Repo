@@ -3,7 +3,14 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags: []
+  tags:
+  - Tower
+  - Ground
+  - Wall
+  - Fuel
+  - Laserbeam
+  - Crate
+  - ShootingTower
   layers:
   - Default
   - TransparentFX
