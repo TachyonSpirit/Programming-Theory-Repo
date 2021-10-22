@@ -12,8 +12,14 @@ public class GameController : MonoBehaviour
     public Text fuelCounterText;
     public Text scoreText;
 
+    //
+    // ENCAPSULATION
+    //
     // Below is an example of encapsulation
-    // Here we're ensuring that other classes can't pass an incorrect value for the fuel amount
+    // Here we're ensuring that other classes can't pass an incorrect value for the fuel amount.
+    // In case a negative fuel amount is passed (i.e. by the player), the value zero will be used
+    // instead and an error will be logged.
+    //
     private int m_fuelCounter; // This is the encapsulated/better-secured variable
     public int fuelCounter // This is the variable accessible to the outside "world"
     {

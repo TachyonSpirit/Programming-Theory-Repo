@@ -31,7 +31,13 @@ public class Player : MonoBehaviour
 
     void Update()
     {
-        // Example of abstraction
+        //
+        // ABSTRACTION
+        //
+        // Making small modular pieces of code should make it easier
+        // for future developers to maintain the code and understand
+        // how the application actually works.
+        //
         MovePlayerForward();
         MovePlayerUpDownLeftRight();
         SwitchCameraView();

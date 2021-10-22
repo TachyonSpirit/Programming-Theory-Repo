@@ -2,7 +2,10 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-// Example of inheritance
+//
+// INHERITANCE
+//
+// ShootingTower is a class inheriting from the Tower class.
 public class ShootingTower : Tower
 {
     public GameObject projectilePrefab;
@@ -38,7 +41,14 @@ public class ShootingTower : Tower
         }        
     }
 
-    // Below an example of polymorphism
+    //
+    // POLYMORPHISM
+    //
+    // Overriding the default RotateTower with a new method that actually makes the 
+    // tower spin in the opposite direction.
+    // And 'yes'... I know, could have passed a negative rotation value instead, but 
+    // this is about showing polymorphism in action ;)
+    //
     public override void RotateTower(float rotationSpeed)
     {
         //base.RotateTower(rotationSpeed);
